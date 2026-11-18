@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4A62A">
+<title>The Feelgood Co. | Hospitality concepts, capabilities, experience and people</title>
+<meta name="description" content="The Feelgood Company is a Bahrain-based hospitality and management consulting group. Website mockup.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preload" href="assets/fonts/lato-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>(function(d){d.classList.add('js');try{if(sessionStorage.getItem('fg-intro'))d.classList.add('no-loader')}catch(e){}})(document.documentElement)</script>
+</head>
+<body>
+<div id="loader" aria-hidden="true" class="fixed inset-0 z-[100] hidden flex-col items-center justify-center gap-8 bg-cream transition-opacity duration-500 ease-out data-[done]:opacity-0 [.js:not(.no-loader)_&]:flex [&>*]:transition-opacity [&>*]:duration-150 data-[done]:delay-150 data-[done]:[&>*]:opacity-0">
+<img src="assets/img/logo.png" alt="" class="w-[180px] animate-loader-in md:w-[220px]">
+<div class="flex gap-2.5">
+<span class="size-2.5 animate-loader-dot rounded-full bg-charcoal motion-reduce:animate-none"></span>
+<span class="size-2.5 animate-loader-dot rounded-full bg-charcoal [animation-delay:150ms] motion-reduce:animate-none"></span>
+<span class="size-2.5 animate-loader-dot rounded-full bg-charcoal [animation-delay:300ms] motion-reduce:animate-none"></span>
+</div>
+</div>
+<header class="sticky top-0 z-50 bg-sunny pt-[env(safe-area-inset-top)]">
+<div class="mx-auto w-full px-6 md:px-10 max-w-6xl flex items-center justify-between gap-4 py-3 md:py-4">
+<a href="index.html" aria-label="The Feelgood Co. home" class="flex-none"><img src="assets/img/logo.png" alt="The Feelgood Co." class="block h-10 w-auto md:h-[52px]"></a>
+<nav aria-label="Main" class="flex items-center gap-5 sm:gap-8 md:gap-10">
+<a href="index.html" data-nav="home" data-active aria-current="page" class="touch-manipulation py-2 text-[13px] uppercase tracking-[.14em] text-charcoal transition-colors duration-200 hover:text-cream data-[active]:font-black data-[active]:text-cream md:text-[15px]">Home</a>
+<a href="about.html" data-nav="about" class="touch-manipulation py-2 text-[13px] uppercase tracking-[.14em] text-charcoal transition-colors duration-200 hover:text-cream data-[active]:font-black data-[active]:text-cream md:text-[15px]">About</a>
+<a href="index.html#services" data-nav="services" class="touch-manipulation py-2 text-[13px] uppercase tracking-[.14em] text-charcoal transition-colors duration-200 hover:text-cream data-[active]:font-black data-[active]:text-cream md:text-[15px]">Services</a>
+</nav>
+</div>
+</header>
+
+<main id="main">
+<!-- Hero: three scenes on a virtual scroll; Charcoal confetti on load -->
+<section id="hero" aria-label="The Feelgood Company introduction" class="hero-stage relative h-[calc(100svh-var(--header-h,72px))] min-h-[520px] overflow-hidden bg-cream">
+<h1 class="sr-only">The Feelgood Company</h1>
+<canvas id="confetti" aria-hidden="true" class="pointer-events-none absolute inset-0 size-full"></canvas>
+
+<div id="scene-logo" class="hero-panel pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+<button type="button" id="replay" aria-label="Replay the confetti" class="pointer-events-auto cursor-pointer touch-manipulation transition-transform duration-150 ease-out active:scale-[.98]"><img src="assets/img/logo.png" alt="The Feelgood Co. logo" class="block w-[260px] max-w-[62vw] md:w-[360px]"></button>
+<a href="#who" id="cue" aria-label="Scroll to the next section" class="pointer-events-auto absolute bottom-8 left-1/2 flex -translate-x-1/2 touch-manipulation flex-col items-center gap-3 text-[13px] font-bold uppercase tracking-[.16em]">Scroll
+<span aria-hidden="true" class="flex size-11 animate-nudge items-center justify-center rounded-full bg-butter"><svg class="transition-transform duration-300 ease-out group-aria-expanded/btn:rotate-180" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg></span></a>
+</div>
+
+<div id="scene-intro" class="hero-panel pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-6 text-center opacity-0">
+<p class="max-w-4xl text-[22px] font-light leading-[1.4] md:text-[34px]">The Feelgood Company is a Bahrain-based hospitality and management consulting group. We create, operate and grow distinctive food, beverage and lifestyle concepts.</p>
+</div>
+
+<div id="scene-philosophy" class="hero-panel pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-6 p-6 text-center opacity-0">
+<h2 class="text-[26px] font-bold uppercase leading-[1.15] tracking-[.06em] md:text-[32px]">Our philosophy</h2>
+<div class="h-0.5 w-12 bg-sunny" aria-hidden="true"></div>
+<p class="max-w-4xl text-[22px] font-light leading-[1.4] md:text-[34px]">The creativity of hospitality, with the discipline of business. Experiences that feel good for customers and make commercial sense for the business behind them.</p>
+</div>
+</section>
+
+<!-- Who we are -->
+<section id="who" class="bg-cream py-20 md:py-28">
+<div class="mx-auto w-full px-6 md:px-10 max-w-6xl grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
+<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-4"><h2 class="reveal text-[26px] font-bold uppercase leading-[1.15] tracking-[.06em] md:text-[32px]">Who we are</h2><div class="reveal-bar h-0.5 w-12 bg-sunny" aria-hidden="true"></div></div>
+<div class="max-w-xl">
+<div class="flex flex-col gap-5">
+<p class="reveal text-[17px] leading-[1.65]">We bring together creative thinking, commercial understanding and hands-on operational expertise to help hospitality businesses go from first idea to sustainable operation.</p>
+<p class="reveal text-[17px] leading-[1.65]">Whether we are developing a new concept, improving an existing business or bringing a temporary activation to life, our approach remains practical, collaborative and focused on execution.</p>
+</div>
+<div id="who-more" inert class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none"><div class="overflow-hidden"><div class="flex flex-col gap-5 pt-5">
+<p class="text-[17px] leading-[1.65]">Our experience spans concept development, restaurant operations, food and beverage strategy, menu development, branding, marketing, team development and business advisory.</p>
+<p class="text-[17px] leading-[1.65]">We believe that great hospitality is about more than good food or attractive spaces. It is about creating an experience that people enjoy, remember and want to return to.</p>
+</div></div></div>
+</div>
+<div class="reveal"><button type="button" data-acc data-acc-group="who" data-more="Read more" data-less="Read less" aria-expanded="false" aria-controls="who-more" class="group/btn inline-flex min-h-12 cursor-pointer touch-manipulation select-none items-center gap-3 rounded-full bg-sunny px-7 text-[15px] font-bold uppercase tracking-[.12em] text-charcoal transition-transform duration-150 ease-out active:scale-[.97]"><span data-label>Read more</span><svg class="transition-transform duration-300 ease-out group-aria-expanded/btn:rotate-180" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg></button></div>
+</div>
+<div class="reveal-img relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-cream-deep md:aspect-[5/6]"><img src="assets/img/ph-interior.svg" alt="Placeholder for interior photography" class="size-full object-cover " loading="lazy"></div>
+</div>
+</section>
+
+<!-- What we do -->
+<section id="what" class="relative overflow-hidden bg-cream-deep py-20 md:py-28">
+<span aria-hidden="true" class="pointer-events-none absolute left-[6%] bottom-[-60px] size-[90px] animate-rise rounded-full bg-sunny opacity-0"></span>
+<span aria-hidden="true" class="pointer-events-none absolute left-[30%] bottom-[-40px] size-[48px] animate-rise rounded-full bg-sage opacity-0 max-md:hidden [animation-delay:3s] [animation-duration:11s]"></span>
+<span aria-hidden="true" class="pointer-events-none absolute left-[58%] bottom-[-70px] size-[72px] animate-rise rounded-full bg-butter opacity-0 max-md:hidden [animation-delay:6s] [animation-duration:16s]"></span>
+<span aria-hidden="true" class="pointer-events-none absolute left-[88%] bottom-[-60px] size-[60px] animate-rise rounded-full bg-sage opacity-0 max-md:hidden [animation-delay:8s] [animation-duration:15s]"></span>
+<div class="mx-auto w-full px-6 md:px-10 max-w-4xl relative z-10">
+<div class="flex flex-col gap-4"><h2 class="reveal text-[26px] font-bold uppercase leading-[1.15] tracking-[.06em] md:text-[32px]">What we do</h2><div class="reveal-bar h-0.5 w-12 bg-sunny" aria-hidden="true"></div></div>
+<div class="mt-8 flex max-w-4xl flex-col gap-5">
+<p class="reveal text-[17px] leading-[1.65]">The Feelgood Company supports hospitality businesses throughout their entire development and operating journey.</p>
+<p class="reveal text-[17px] leading-[1.65]">We work with entrepreneurs, investors, operators and established businesses to develop concepts, strengthen operations and identify opportunities for growth.</p>
+<p class="reveal text-[17px] leading-[1.65]">Our involvement can begin at the earliest stages of an idea or at any point in an existing business's lifecycle.</p>
+</div>
+<div class="mx-auto mt-16 max-w-2xl">
+<p class="reveal text-[13px] font-bold uppercase tracking-[.16em]">Our core capabilities include</p>
+<ul class="divide-y divide-sage mt-5">
+<li class="reveal flex items-start gap-4 py-3.5"><span aria-hidden="true" class="mt-[9px] size-2.5 flex-none rounded-full bg-sunny"></span><span class="text-[17px] leading-[1.65]">Hospitality concept development and positioning</span></li>
+<li class="reveal flex items-start gap-4 py-3.5"><span aria-hidden="true" class="mt-[9px] size-2.5 flex-none rounded-full bg-sunny"></span><span class="text-[17px] leading-[1.65]">Business planning and commercial strategy</span></li>
+<li class="reveal flex items-start gap-4 py-3.5"><span aria-hidden="true" class="mt-[9px] size-2.5 flex-none rounded-full bg-sunny"></span><span class="text-[17px] leading-[1.65]">Food and beverage menu development and engineering</span></li>
+<li class="reveal flex items-start gap-4 py-3.5"><span aria-hidden="true" class="mt-[9px] size-2.5 flex-none rounded-full bg-sunny"></span><span class="text-[17px] leading-[1.65]">Kitchen design and operational planning</span></li>
+<li class="reveal flex items-start gap-4 py-3.5"><span aria-hidden="true" class="mt-[9px] size-2.5 flex-none rounded-full bg-sunny"></span><span class="text-[17px] leading-[1.65]">Recruitment, training and team development</span></li>
+<li class="reveal flex items-start gap-4 py-3.5"><span aria-hidden="true" class="mt-[9px] size-2.5 flex-none rounded-full bg-sunny"></span><span class="text-[17px] leading-[1.65]">Front-of-house and back-of-house operations</span></li>
+<li class="reveal flex items-start gap-4 py-3.5"><span aria-hidden="true" class="mt-[9px] size-2.5 flex-none rounded-full bg-sunny"></span><span class="text-[17px] leading-[1.65]">Bar and beverage development</span></li>
+<li class="reveal flex items-start gap-4 py-3.5"><span aria-hidden="true" class="mt-[9px] size-2.5 flex-none rounded-full bg-sunny"></span><span class="text-[17px] leading-[1.65]">Brand development, marketing and activations</span></li>
+<li class="reveal flex items-start gap-4 py-3.5"><span aria-hidden="true" class="mt-[9px] size-2.5 flex-none rounded-full bg-sunny"></span><span class="text-[17px] leading-[1.65]">Pre-opening planning and implementation</span></li>
+<li class="reveal flex items-start gap-4 py-3.5"><span aria-hidden="true" class="mt-[9px] size-2.5 flex-none rounded-full bg-sunny"></span><span class="text-[17px] leading-[1.65]">Post-opening management and performance improvement</span></li>
+<li class="reveal flex items-start gap-4 py-3.5"><span aria-hidden="true" class="mt-[9px] size-2.5 flex-none rounded-full bg-sunny"></span><span class="text-[17px] leading-[1.65]">Strategic advisory, investment and growth support</span></li>
+</ul>
+<p class="reveal text-[17px] leading-[1.65] mt-10">Our strength is bringing these disciplines together into one coordinated approach.</p>
+</div>
+</div>
+</section>
+
+<!-- Lifecycle -->
+<section id="lifecycle" class="bg-cream py-20 md:py-28">
+<div class="mx-auto w-full px-6 md:px-10 max-w-6xl grid grid-cols-1 items-center gap-10 md:grid-cols-[5fr_7fr] md:gap-12">
+<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-4"><h2 class="reveal text-[26px] font-bold uppercase leading-[1.15] tracking-[.06em] md:text-[32px]">Our approach: the F&amp;B business lifecycle</h2><div class="reveal-bar h-0.5 w-12 bg-sunny" aria-hidden="true"></div></div>
+<div class="flex flex-col gap-5">
+<p class="reveal text-[20px] font-light leading-[1.45] md:text-[24px]">We see hospitality development as a continuous cycle rather than a one-time launch.</p>
+<p class="reveal text-[17px] leading-[1.65]">Every successful concept requires a clear idea, a sound business plan, the right people, disciplined execution and a commitment to continuous improvement.</p>
+</div>
+</div>
+<div class="reveal flex items-center justify-center">
+<svg class="cycle hidden h-auto w-full max-w-4xl md:block" viewBox="0 0 1100 760" role="img" aria-label="The five stages of the F&amp;B lifecycle shown as a loop: concept development, business planning and design, team development and training, implementation and launch, post-implementation and optimisation.">
+<path d="M618.7 175.3A235 235 0 0 1 742.5 265.2" fill="none" stroke="#57534E" stroke-width="3" stroke-linecap="round"/>
+<path d="M785.0 395.9A235 235 0 0 1 737.7 541.4" fill="none" stroke="#57534E" stroke-width="3" stroke-linecap="round"/>
+<path d="M626.5 622.2A235 235 0 0 1 473.5 622.2" fill="none" stroke="#57534E" stroke-width="3" stroke-linecap="round"/>
+<path d="M362.3 541.4A235 235 0 0 1 315.0 395.9" fill="none" stroke="#57534E" stroke-width="3" stroke-linecap="round"/>
+<path d="M357.5 265.2A235 235 0 0 1 481.3 175.3" fill="none" stroke="#57534E" stroke-width="3" stroke-linecap="round"/>
+<text text-anchor="middle" font-size="26" font-weight="700" fill="#57534E"><tspan x="550" y="398">A continuous cycle,</tspan><tspan x="550" y="428">not a one-time launch</tspan></text>
+<a href="#stage-1" aria-label="Concept development"><g transform="translate(500.0 115.0)"><g class="node node-1" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M50 10C33 10 21 23 21 39c0 10 5 17 11 23v9h36v-9c6-6 11-13 11-23 0-16-12-29-29-29z" stroke="#F4A62A"/>
+<path d="M39 82h22M43 90h14M41 52l9-11 9 11" stroke="#57534E"/></g></g>
+<text text-anchor="middle" font-size="27" font-weight="700" fill="#57534E"><tspan x="550.0" y="69.0">Concept</tspan><tspan x="550.0" y="101.0">development</tspan></text>
+</a>
+<a href="#stage-2" aria-label="Business planning and design"><g transform="translate(723.5 277.4)"><g class="node node-2" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 10h34l18 18v62H24z" stroke="#F4A62A"/><path d="M58 10v18h18" stroke="#F4A62A"/>
+<path d="M35 44h30M35 56h18" stroke="#57534E"/><circle cx="68" cy="76" r="15" stroke="#57534E"/><path d="M61 76l5 5 9-11" stroke="#57534E"/></g></g>
+<text font-size="27" font-weight="700" fill="#57534E"><tspan x="839.5" y="325.4">Business planning</tspan><tspan x="839.5" y="355.4">& design</tspan></text>
+</a>
+<a href="#stage-3" aria-label="Team development and training"><g transform="translate(638.1 540.1)"><g class="node node-3" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="38" cy="30" r="13" stroke="#F4A62A"/><path d="M12 82c0-18 11-29 26-29s26 11 26 29z" stroke="#F4A62A"/>
+<circle cx="71" cy="38" r="10" stroke="#57534E"/><path d="M62 56c3-2 6-3 9-3 13 1 19 12 19 29h-18" stroke="#57534E"/></g></g>
+<text text-anchor="middle" font-size="27" font-weight="700" fill="#57534E"><tspan x="688.1" y="674.1">Team development</tspan><tspan x="688.1" y="704.1">& training</tspan></text>
+</a>
+<a href="#stage-4" aria-label="Implementation and launch"><g transform="translate(361.9 540.1)"><g class="node node-4" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M50 8c15 11 19 30 14 50H36C31 38 35 19 50 8z" stroke="#F4A62A"/><circle cx="50" cy="34" r="7" stroke="#57534E"/>
+<path d="M36 58L22 74l16-3M64 58l14 16-16-3M43 70c0 9 7 18 7 18s7-9 7-18" stroke="#57534E"/></g></g>
+<text text-anchor="middle" font-size="27" font-weight="700" fill="#57534E"><tspan x="411.9" y="674.1">Implementation</tspan><tspan x="411.9" y="704.1">& launch</tspan></text>
+</a>
+<a href="#stage-5" aria-label="Post-implementation and optimisation"><g transform="translate(276.5 277.4)"><g class="node node-5" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 14v72h72" stroke="#57534E"/><rect x="28" y="56" width="12" height="30" rx="2" stroke="#F4A62A"/><rect x="48" y="42" width="12" height="44" rx="2" stroke="#F4A62A"/><rect x="68" y="28" width="12" height="58" rx="2" stroke="#F4A62A"/>
+<path d="M26 40l18-16 12 8 24-20M68 12h12v12" stroke="#57534E"/></g></g>
+<text text-anchor="end" font-size="27" font-weight="700" fill="#57534E"><tspan x="260.5" y="325.4">Post-implementation</tspan><tspan x="260.5" y="355.4">& optimisation</tspan></text>
+</a>
+<g class="orbit" aria-hidden="true"><circle cx="550.0" cy="165.0" r="13" fill="#57534E"/></g>
+</svg>
+<svg class="cycle mx-auto block h-auto w-full max-w-md md:hidden" viewBox="262 100 576 556" role="img" aria-label="The five stages of the F&amp;B lifecycle shown as a loop: concept development, business planning and design, team development and training, implementation and launch, post-implementation and optimisation.">
+<path d="M618.7 175.3A235 235 0 0 1 742.5 265.2" fill="none" stroke="#57534E" stroke-width="3" stroke-linecap="round"/>
+<path d="M785.0 395.9A235 235 0 0 1 737.7 541.4" fill="none" stroke="#57534E" stroke-width="3" stroke-linecap="round"/>
+<path d="M626.5 622.2A235 235 0 0 1 473.5 622.2" fill="none" stroke="#57534E" stroke-width="3" stroke-linecap="round"/>
+<path d="M362.3 541.4A235 235 0 0 1 315.0 395.9" fill="none" stroke="#57534E" stroke-width="3" stroke-linecap="round"/>
+<path d="M357.5 265.2A235 235 0 0 1 481.3 175.3" fill="none" stroke="#57534E" stroke-width="3" stroke-linecap="round"/>
+<text text-anchor="middle" font-size="34" font-weight="700" fill="#57534E"><tspan x="550" y="392">A continuous cycle,</tspan><tspan x="550" y="434">not a one-time launch</tspan></text>
+<a href="#stage-1" aria-label="Concept development"><g transform="translate(500.0 115.0)"><g class="node node-1" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M50 10C33 10 21 23 21 39c0 10 5 17 11 23v9h36v-9c6-6 11-13 11-23 0-16-12-29-29-29z" stroke="#F4A62A"/>
+<path d="M39 82h22M43 90h14M41 52l9-11 9 11" stroke="#57534E"/></g></g>
+</a>
+<a href="#stage-2" aria-label="Business planning and design"><g transform="translate(723.5 277.4)"><g class="node node-2" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 10h34l18 18v62H24z" stroke="#F4A62A"/><path d="M58 10v18h18" stroke="#F4A62A"/>
+<path d="M35 44h30M35 56h18" stroke="#57534E"/><circle cx="68" cy="76" r="15" stroke="#57534E"/><path d="M61 76l5 5 9-11" stroke="#57534E"/></g></g>
+</a>
+<a href="#stage-3" aria-label="Team development and training"><g transform="translate(638.1 540.1)"><g class="node node-3" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="38" cy="30" r="13" stroke="#F4A62A"/><path d="M12 82c0-18 11-29 26-29s26 11 26 29z" stroke="#F4A62A"/>
+<circle cx="71" cy="38" r="10" stroke="#57534E"/><path d="M62 56c3-2 6-3 9-3 13 1 19 12 19 29h-18" stroke="#57534E"/></g></g>
+</a>
+<a href="#stage-4" aria-label="Implementation and launch"><g transform="translate(361.9 540.1)"><g class="node node-4" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M50 8c15 11 19 30 14 50H36C31 38 35 19 50 8z" stroke="#F4A62A"/><circle cx="50" cy="34" r="7" stroke="#57534E"/>
+<path d="M36 58L22 74l16-3M64 58l14 16-16-3M43 70c0 9 7 18 7 18s7-9 7-18" stroke="#57534E"/></g></g>
+</a>
+<a href="#stage-5" aria-label="Post-implementation and optimisation"><g transform="translate(276.5 277.4)"><g class="node node-5" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 14v72h72" stroke="#57534E"/><rect x="28" y="56" width="12" height="30" rx="2" stroke="#F4A62A"/><rect x="48" y="42" width="12" height="44" rx="2" stroke="#F4A62A"/><rect x="68" y="28" width="12" height="58" rx="2" stroke="#F4A62A"/>
+<path d="M26 40l18-16 12 8 24-20M68 12h12v12" stroke="#57534E"/></g></g>
+</a>
+<g class="orbit" aria-hidden="true"><circle cx="550.0" cy="165.0" r="13" fill="#57534E"/></g>
+</svg>
+</div>
+</div>
+<div class="mx-auto w-full px-6 md:px-10 max-w-6xl mt-16 md:mt-20">
+<div id="tl" class="relative flex flex-col gap-8 md:gap-10">
+<div aria-hidden="true" class="absolute bottom-0 left-7 top-0 w-[3px] -translate-x-1/2 bg-sage/50 md:left-1/2"></div>
+<div id="tl-fill" aria-hidden="true" class="tl-fill absolute bottom-0 left-7 top-0 w-[3px] -translate-x-1/2 bg-sunny md:left-1/2"></div>
+<div id="stage-1" class="tl-row relative grid grid-cols-[56px_1fr] items-center md:grid-cols-[1fr_72px_1fr]">
+<div class="relative z-10 col-start-1 row-start-1 flex justify-center md:col-start-2"><div class="rounded-full bg-cream p-2"><span class="tl-dot flex size-14 items-center justify-center rounded-full bg-sunny text-[24px] font-black" aria-hidden="true">1</span></div></div>
+<div class="col-start-2 row-start-1 ml-4 md:ml-0 md:col-start-1 md:mr-8">
+<div class="tl-card tl-card-left flex flex-col gap-3 rounded-3xl border border-sage bg-cream p-7 transition-colors duration-200 hover:bg-cream-deep md:p-8">
+<p class="text-[13px] font-bold uppercase tracking-[.16em]">Phase 1</p>
+<h3 class="text-[19px] font-bold leading-snug md:text-[20px] md:text-[22px]">Concept development</h3>
+<p class="text-[18px] leading-[1.5]">Every business begins with a clear proposition.</p>
+<p class="text-[15px] leading-[1.6]">We help define the concept, customer experience, market positioning, food and beverage offering, brand direction and commercial opportunity.</p>
+<p class="text-[15px] leading-[1.6]">This includes market research, competitor benchmarking, customer profiling, concept ideation and the development of a distinctive hospitality identity.</p>
+</div>
+</div>
+</div>
+<div id="stage-2" class="tl-row relative grid grid-cols-[56px_1fr] items-center md:grid-cols-[1fr_72px_1fr]">
+<div class="relative z-10 col-start-1 row-start-1 flex justify-center md:col-start-2"><div class="rounded-full bg-cream p-2"><span class="tl-dot flex size-14 items-center justify-center rounded-full bg-sunny text-[24px] font-black" aria-hidden="true">2</span></div></div>
+<div class="col-start-2 row-start-1 ml-4 md:ml-0 md:col-start-3 md:ml-8">
+<div class="tl-card tl-card-right flex flex-col gap-3 rounded-3xl border border-sage bg-cream p-7 transition-colors duration-200 hover:bg-cream-deep md:p-8">
+<p class="text-[13px] font-bold uppercase tracking-[.16em]">Phase 2</p>
+<h3 class="text-[19px] font-bold leading-snug md:text-[20px] md:text-[22px]">Business planning &amp; design</h3>
+<p class="text-[18px] leading-[1.5]">Once the concept is established, we translate the vision into a practical business model.</p>
+<p class="text-[15px] leading-[1.6]">This includes business planning, pricing strategy, operational requirements, menu development, kitchen planning, equipment recommendations, staffing structures and implementation planning.</p>
+<p class="text-[15px] leading-[1.6]">The objective is to create a concept that is both appealing to customers and operationally achievable.</p>
+</div>
+</div>
+</div>
+<div id="stage-3" class="tl-row relative grid grid-cols-[56px_1fr] items-center md:grid-cols-[1fr_72px_1fr]">
+<div class="relative z-10 col-start-1 row-start-1 flex justify-center md:col-start-2"><div class="rounded-full bg-cream p-2"><span class="tl-dot flex size-14 items-center justify-center rounded-full bg-sunny text-[24px] font-black" aria-hidden="true">3</span></div></div>
+<div class="col-start-2 row-start-1 ml-4 md:ml-0 md:col-start-1 md:mr-8">
+<div class="tl-card tl-card-left flex flex-col gap-3 rounded-3xl border border-sage bg-cream p-7 transition-colors duration-200 hover:bg-cream-deep md:p-8">
+<p class="text-[13px] font-bold uppercase tracking-[.16em]">Phase 3</p>
+<h3 class="text-[19px] font-bold leading-snug md:text-[20px] md:text-[22px]">Team development &amp; training</h3>
+<p class="text-[18px] leading-[1.5]">People are central to the hospitality experience.</p>
+<p class="text-[15px] leading-[1.6]">We support recruitment, team structures, standard operating procedures and practical training across kitchen, service and bar operations.</p>
+<p class="text-[15px] leading-[1.6]">Training covers product knowledge, recipes, service standards, operational routines, quality control and team coordination.</p>
+</div>
+</div>
+</div>
+<div id="stage-4" class="tl-row relative grid grid-cols-[56px_1fr] items-center md:grid-cols-[1fr_72px_1fr]">
+<div class="relative z-10 col-start-1 row-start-1 flex justify-center md:col-start-2"><div class="rounded-full bg-cream p-2"><span class="tl-dot flex size-14 items-center justify-center rounded-full bg-sunny text-[24px] font-black" aria-hidden="true">4</span></div></div>
+<div class="col-start-2 row-start-1 ml-4 md:ml-0 md:col-start-3 md:ml-8">
+<div class="tl-card tl-card-right flex flex-col gap-3 rounded-3xl border border-sage bg-cream p-7 transition-colors duration-200 hover:bg-cream-deep md:p-8">
+<p class="text-[13px] font-bold uppercase tracking-[.16em]">Phase 4</p>
+<h3 class="text-[19px] font-bold leading-snug md:text-[20px] md:text-[22px]">Implementation &amp; launch</h3>
+<p class="text-[18px] leading-[1.5]">We help bring the concept to life.</p>
+<p class="text-[15px] leading-[1.6]">Our involvement may include pre-opening coordination, menu testing, operational readiness, mock services, marketing campaigns, launch activations and hands-on support during opening.</p>
+<p class="text-[15px] leading-[1.6]">We focus on ensuring that the experience promised by the concept can be delivered consistently in practice.</p>
+</div>
+</div>
+</div>
+<div id="stage-5" class="tl-row relative grid grid-cols-[56px_1fr] items-center md:grid-cols-[1fr_72px_1fr]">
+<div class="relative z-10 col-start-1 row-start-1 flex justify-center md:col-start-2"><div class="rounded-full bg-cream p-2"><span class="tl-dot flex size-14 items-center justify-center rounded-full bg-sunny text-[24px] font-black" aria-hidden="true">5</span></div></div>
+<div class="col-start-2 row-start-1 ml-4 md:ml-0 md:col-start-1 md:mr-8">
+<div class="tl-card tl-card-left flex flex-col gap-3 rounded-3xl border border-sage bg-cream p-7 transition-colors duration-200 hover:bg-cream-deep md:p-8">
+<p class="text-[13px] font-bold uppercase tracking-[.16em]">Phase 5</p>
+<h3 class="text-[19px] font-bold leading-snug md:text-[20px] md:text-[22px]">Post-implementation &amp; optimisation</h3>
+<p class="text-[18px] leading-[1.5]">Opening is the beginning of the next stage.</p>
+<p class="text-[15px] leading-[1.6]">We review performance, customer feedback, product quality, costs, service standards and operational efficiency to identify opportunities for improvement.</p>
+<p class="text-[15px] leading-[1.6]">This may include menu engineering, pricing adjustments, staff development, marketing initiatives and operational restructuring.</p>
+<p class="text-[15px] leading-[1.6]">The insights gained feed into the next cycle of business development and growth.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Services -->
+<section id="services" class="bg-cream-deep py-20 md:py-28">
+<div class="mx-auto w-full px-6 md:px-10 max-w-6xl">
+<div class="flex flex-col gap-4"><h2 class="reveal text-[26px] font-bold uppercase leading-[1.15] tracking-[.06em] md:text-[32px]">Our services</h2><div class="reveal-bar h-0.5 w-12 bg-sunny" aria-hidden="true"></div></div>
+<p class="reveal text-[17px] leading-[1.65] mt-8 max-w-3xl">Eight ways we help, from the first concept to ongoing performance.</p>
+<ul class="mt-12 divide-y divide-sage">
+<li class="reveal border-sage">
+<h3><button type="button" data-acc data-acc-group="svc" aria-expanded="false" aria-controls="svc-0" class="group group/btn flex min-h-16 w-full cursor-pointer touch-manipulation select-none items-center gap-5 py-5 text-left">
+<span aria-hidden="true" class="w-8 flex-none text-[14px] font-bold tabular-nums text-charcoal/70">01</span>
+<span class="flex-1 text-[19px] font-bold leading-snug md:text-[20px] transition-transform duration-300 ease-out group-hover:translate-x-1.5">Concept &amp; brand development</span>
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-full border border-charcoal/30 transition-colors duration-200 group-hover:border-sunny group-hover:bg-sunny group-aria-expanded/btn:border-sunny group-aria-expanded/btn:bg-sunny"><svg class="transition-transform duration-300 ease-out group-aria-expanded/btn:rotate-45" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+</button></h3>
+<div id="svc-0" inert class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none">
+<div class="overflow-hidden"><div class="flex max-w-3xl flex-col gap-3 pb-7 pl-[52px] md:pr-16">
+<p class="text-[17px] leading-[1.65]">We develop hospitality concepts with a clear identity, relevant market positioning and a compelling customer experience.</p>
+<p class="text-[17px] leading-[1.65]">Services include concept creation, brand positioning, competitive analysis, customer journey development, food and beverage direction and creative strategy.</p>
+</div></div>
+</div>
+</li>
+<li class="reveal border-sage">
+<h3><button type="button" data-acc data-acc-group="svc" aria-expanded="false" aria-controls="svc-1" class="group group/btn flex min-h-16 w-full cursor-pointer touch-manipulation select-none items-center gap-5 py-5 text-left">
+<span aria-hidden="true" class="w-8 flex-none text-[14px] font-bold tabular-nums text-charcoal/70">02</span>
+<span class="flex-1 text-[19px] font-bold leading-snug md:text-[20px] transition-transform duration-300 ease-out group-hover:translate-x-1.5">Menu development &amp; engineering</span>
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-full border border-charcoal/30 transition-colors duration-200 group-hover:border-sunny group-hover:bg-sunny group-aria-expanded/btn:border-sunny group-aria-expanded/btn:bg-sunny"><svg class="transition-transform duration-300 ease-out group-aria-expanded/btn:rotate-45" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+</button></h3>
+<div id="svc-1" inert class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none">
+<div class="overflow-hidden"><div class="flex max-w-3xl flex-col gap-3 pb-7 pl-[52px] md:pr-16">
+<p class="text-[17px] leading-[1.65]">We create and refine menus that balance creativity, customer appeal, operational feasibility and profitability.</p>
+<p class="text-[17px] leading-[1.65]">Our work includes dish ideation, recipe development, ingredient sourcing, recipe costing, menu pricing, margin analysis, tastings, plating standards and menu optimisation.</p>
+<p class="text-[17px] leading-[1.65]">We also assess menu performance and identify opportunities to improve profitability, simplify execution and reduce waste.</p>
+</div></div>
+</div>
+</li>
+<li class="reveal border-sage">
+<h3><button type="button" data-acc data-acc-group="svc" aria-expanded="false" aria-controls="svc-2" class="group group/btn flex min-h-16 w-full cursor-pointer touch-manipulation select-none items-center gap-5 py-5 text-left">
+<span aria-hidden="true" class="w-8 flex-none text-[14px] font-bold tabular-nums text-charcoal/70">03</span>
+<span class="flex-1 text-[19px] font-bold leading-snug md:text-[20px] transition-transform duration-300 ease-out group-hover:translate-x-1.5">Kitchen &amp; back-of-house development</span>
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-full border border-charcoal/30 transition-colors duration-200 group-hover:border-sunny group-hover:bg-sunny group-aria-expanded/btn:border-sunny group-aria-expanded/btn:bg-sunny"><svg class="transition-transform duration-300 ease-out group-aria-expanded/btn:rotate-45" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+</button></h3>
+<div id="svc-2" inert class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none">
+<div class="overflow-hidden"><div class="flex max-w-3xl flex-col gap-3 pb-7 pl-[52px] md:pr-16">
+<p class="text-[17px] leading-[1.65]">We help build efficient kitchen operations that support the intended menu and service model.</p>
+<p class="text-[17px] leading-[1.65]">Services include kitchen workflow planning, equipment specifications, station design, procurement guidance, production systems, hygiene procedures, recipe documentation and back-of-house training.</p>
+</div></div>
+</div>
+</li>
+<li class="reveal border-sage">
+<h3><button type="button" data-acc data-acc-group="svc" aria-expanded="false" aria-controls="svc-3" class="group group/btn flex min-h-16 w-full cursor-pointer touch-manipulation select-none items-center gap-5 py-5 text-left">
+<span aria-hidden="true" class="w-8 flex-none text-[14px] font-bold tabular-nums text-charcoal/70">04</span>
+<span class="flex-1 text-[19px] font-bold leading-snug md:text-[20px] transition-transform duration-300 ease-out group-hover:translate-x-1.5">Front-of-house development</span>
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-full border border-charcoal/30 transition-colors duration-200 group-hover:border-sunny group-hover:bg-sunny group-aria-expanded/btn:border-sunny group-aria-expanded/btn:bg-sunny"><svg class="transition-transform duration-300 ease-out group-aria-expanded/btn:rotate-45" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+</button></h3>
+<div id="svc-3" inert class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none">
+<div class="overflow-hidden"><div class="flex max-w-3xl flex-col gap-3 pb-7 pl-[52px] md:pr-16">
+<p class="text-[17px] leading-[1.65]">We help create service experiences that are welcoming, efficient and consistent.</p>
+<p class="text-[17px] leading-[1.65]">This includes service procedures, guest experience standards, staffing coordination, team training, service simulations and ongoing quality assessment.</p>
+</div></div>
+</div>
+</li>
+<li class="reveal border-sage">
+<h3><button type="button" data-acc data-acc-group="svc" aria-expanded="false" aria-controls="svc-4" class="group group/btn flex min-h-16 w-full cursor-pointer touch-manipulation select-none items-center gap-5 py-5 text-left">
+<span aria-hidden="true" class="w-8 flex-none text-[14px] font-bold tabular-nums text-charcoal/70">05</span>
+<span class="flex-1 text-[19px] font-bold leading-snug md:text-[20px] transition-transform duration-300 ease-out group-hover:translate-x-1.5">Bar &amp; beverage development</span>
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-full border border-charcoal/30 transition-colors duration-200 group-hover:border-sunny group-hover:bg-sunny group-aria-expanded/btn:border-sunny group-aria-expanded/btn:bg-sunny"><svg class="transition-transform duration-300 ease-out group-aria-expanded/btn:rotate-45" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+</button></h3>
+<div id="svc-4" inert class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none">
+<div class="overflow-hidden"><div class="flex max-w-3xl flex-col gap-3 pb-7 pl-[52px] md:pr-16">
+<p class="text-[17px] leading-[1.65]">We support beverage concepts through menu development, cocktail creation, costing, presentation, operational setup and bar team training.</p>
+<p class="text-[17px] leading-[1.65]">Our focus is on delivering a beverage experience that complements the wider concept while remaining practical and commercially sound.</p>
+</div></div>
+</div>
+</li>
+<li class="reveal border-sage">
+<h3><button type="button" data-acc data-acc-group="svc" aria-expanded="false" aria-controls="svc-5" class="group group/btn flex min-h-16 w-full cursor-pointer touch-manipulation select-none items-center gap-5 py-5 text-left">
+<span aria-hidden="true" class="w-8 flex-none text-[14px] font-bold tabular-nums text-charcoal/70">06</span>
+<span class="flex-1 text-[19px] font-bold leading-snug md:text-[20px] transition-transform duration-300 ease-out group-hover:translate-x-1.5">Marketing, programming &amp; activations</span>
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-full border border-charcoal/30 transition-colors duration-200 group-hover:border-sunny group-hover:bg-sunny group-aria-expanded/btn:border-sunny group-aria-expanded/btn:bg-sunny"><svg class="transition-transform duration-300 ease-out group-aria-expanded/btn:rotate-45" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+</button></h3>
+<div id="svc-5" inert class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none">
+<div class="overflow-hidden"><div class="flex max-w-3xl flex-col gap-3 pb-7 pl-[52px] md:pr-16">
+<p class="text-[17px] leading-[1.65]">We help hospitality businesses build awareness, connect with their audiences and create reasons for customers to visit.</p>
+<p class="text-[17px] leading-[1.65]">Services include marketing strategy, content direction, social media planning, launch campaigns, event programming, collaborations, pop-ups and temporary hospitality activations.</p>
+</div></div>
+</div>
+</li>
+<li class="reveal border-sage">
+<h3><button type="button" data-acc data-acc-group="svc" aria-expanded="false" aria-controls="svc-6" class="group group/btn flex min-h-16 w-full cursor-pointer touch-manipulation select-none items-center gap-5 py-5 text-left">
+<span aria-hidden="true" class="w-8 flex-none text-[14px] font-bold tabular-nums text-charcoal/70">07</span>
+<span class="flex-1 text-[19px] font-bold leading-snug md:text-[20px] transition-transform duration-300 ease-out group-hover:translate-x-1.5">Operations &amp; management</span>
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-full border border-charcoal/30 transition-colors duration-200 group-hover:border-sunny group-hover:bg-sunny group-aria-expanded/btn:border-sunny group-aria-expanded/btn:bg-sunny"><svg class="transition-transform duration-300 ease-out group-aria-expanded/btn:rotate-45" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+</button></h3>
+<div id="svc-6" inert class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none">
+<div class="overflow-hidden"><div class="flex max-w-3xl flex-col gap-3 pb-7 pl-[52px] md:pr-16">
+<p class="text-[17px] leading-[1.65]">We support the day-to-day and strategic requirements of hospitality operations.</p>
+<p class="text-[17px] leading-[1.65]">This includes operational reviews, staffing structures, procurement, cost control, performance management, service standards, quality assurance and continuous improvement.</p>
+</div></div>
+</div>
+</li>
+<li class="reveal border-sage">
+<h3><button type="button" data-acc data-acc-group="svc" aria-expanded="false" aria-controls="svc-7" class="group group/btn flex min-h-16 w-full cursor-pointer touch-manipulation select-none items-center gap-5 py-5 text-left">
+<span aria-hidden="true" class="w-8 flex-none text-[14px] font-bold tabular-nums text-charcoal/70">08</span>
+<span class="flex-1 text-[19px] font-bold leading-snug md:text-[20px] transition-transform duration-300 ease-out group-hover:translate-x-1.5">Corporate development &amp; strategic advisory</span>
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-full border border-charcoal/30 transition-colors duration-200 group-hover:border-sunny group-hover:bg-sunny group-aria-expanded/btn:border-sunny group-aria-expanded/btn:bg-sunny"><svg class="transition-transform duration-300 ease-out group-aria-expanded/btn:rotate-45" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+</button></h3>
+<div id="svc-7" inert class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none">
+<div class="overflow-hidden"><div class="flex max-w-3xl flex-col gap-3 pb-7 pl-[52px] md:pr-16">
+<p class="text-[17px] leading-[1.65]">We support business owners and investors in evaluating opportunities, planning expansion and developing sustainable growth strategies.</p>
+<p class="text-[17px] leading-[1.65]">Areas of focus include commercial planning, investment evaluation, partnership development, business development and strategic growth initiatives.</p>
+</div></div>
+</div>
+</li>
+</ul>
+</div>
+</section>
+
+<!-- Brands -->
+<section id="brands" class="bg-cream py-20 md:py-28">
+<div class="mx-auto w-full px-6 md:px-10 max-w-6xl">
+<div class="flex flex-col gap-4"><h2 class="reveal text-[26px] font-bold uppercase leading-[1.15] tracking-[.06em] md:text-[32px]">Brands &amp; hospitality experience</h2><div class="reveal-bar h-0.5 w-12 bg-sunny" aria-hidden="true"></div></div>
+<p class="reveal text-[17px] leading-[1.65] mt-8 max-w-3xl">Experience from developing, operating and contributing to hospitality concepts across different formats.</p>
+<div class="mt-12 grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+<article class="reveal group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-cream-deep">
+<img src="assets/img/ph-bowl.svg" alt="Placeholder for Ramenara photography" class="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" loading="lazy">
+<span class="absolute bottom-4 left-4 flex translate-y-2 items-center gap-2 rounded-full bg-cream px-4 py-2 text-[14px] font-bold opacity-0 transition duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100"><span aria-hidden="true" class="size-2.5 flex-none rounded-full bg-sunny"></span>Upper-casual dining &amp; bar</span>
+</div>
+<div class="mt-5 flex items-center gap-3">
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-xl border border-sage text-[14px] font-black">R</span>
+<h3 class="text-[19px] font-bold leading-snug md:text-[20px]">Ramenara</h3>
+</div>
+<p class="mt-2 max-w-sm text-[15px] leading-[1.6]">Upper-casual dining and bar service, shaped by the founders&#x27; hands-on restaurant experience.</p>
+</article>
+<article class="reveal group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-cream-deep">
+<img src="assets/img/ph-plate.svg" alt="Placeholder for Manos photography" class="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" loading="lazy">
+<span class="absolute bottom-4 left-4 flex translate-y-2 items-center gap-2 rounded-full bg-cream px-4 py-2 text-[14px] font-bold opacity-0 transition duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100"><span aria-hidden="true" class="size-2.5 flex-none rounded-full bg-sunny"></span>Upper-casual dining</span>
+</div>
+<div class="mt-5 flex items-center gap-3">
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-xl border border-sage text-[14px] font-black">M</span>
+<h3 class="text-[19px] font-bold leading-snug md:text-[20px]">Manos</h3>
+</div>
+<p class="mt-2 max-w-sm text-[15px] leading-[1.6]">Upper-casual dining and sports-club food service, including Manos at The Rugby Club.</p>
+</article>
+<article class="reveal group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-cream-deep">
+<img src="assets/img/ph-glass.svg" alt="Placeholder for Zimari photography" class="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" loading="lazy">
+<span class="absolute bottom-4 left-4 flex translate-y-2 items-center gap-2 rounded-full bg-cream px-4 py-2 text-[14px] font-bold opacity-0 transition duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100"><span aria-hidden="true" class="size-2.5 flex-none rounded-full bg-sunny"></span>To be confirmed</span>
+</div>
+<div class="mt-5 flex items-center gap-3">
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-xl border border-sage text-[14px] font-black">Z</span>
+<h3 class="text-[19px] font-bold leading-snug md:text-[20px]">Zimari</h3>
+</div>
+<p class="mt-2 max-w-sm text-[15px] leading-[1.6]">Part of the founders&#x27; hospitality portfolio. The full story will follow.</p>
+</article>
+<article class="reveal group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-cream-deep">
+<img src="assets/img/ph-awning.svg" alt="Placeholder for Ramenaki photography" class="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" loading="lazy">
+<span class="absolute bottom-4 left-4 flex translate-y-2 items-center gap-2 rounded-full bg-cream px-4 py-2 text-[14px] font-bold opacity-0 transition duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100"><span aria-hidden="true" class="size-2.5 flex-none rounded-full bg-sunny"></span>Pop-up</span>
+</div>
+<div class="mt-5 flex items-center gap-3">
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-xl border border-sage text-[14px] font-black">R</span>
+<h3 class="text-[19px] font-bold leading-snug md:text-[20px]">Ramenaki</h3>
+</div>
+<p class="mt-2 max-w-sm text-[15px] leading-[1.6]">An experiential dining pop-up built on creative, temporary hospitality.</p>
+</article>
+<article class="reveal group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-cream-deep">
+<img src="assets/img/ph-heritage.svg" alt="Placeholder for The Phoenix / Bapco Club photography" class="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" loading="lazy">
+<span class="absolute bottom-4 left-4 flex translate-y-2 items-center gap-2 rounded-full bg-cream px-4 py-2 text-[14px] font-bold opacity-0 transition duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100"><span aria-hidden="true" class="size-2.5 flex-none rounded-full bg-sunny"></span>Heritage residency</span>
+</div>
+<div class="mt-5 flex items-center gap-3">
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-xl border border-sage text-[14px] font-black">PC</span>
+<h3 class="text-[19px] font-bold leading-snug md:text-[20px]">The Phoenix / Bapco Club</h3>
+</div>
+<p class="mt-2 max-w-sm text-[15px] leading-[1.6]">A heritage-led residency covering concept, food and beverage, programming and operations.</p>
+</article>
+<article class="reveal group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-cream-deep">
+<img src="assets/img/ph-pot.svg" alt="Placeholder for Good Neighbour photography" class="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" loading="lazy">
+<span class="absolute bottom-4 left-4 flex translate-y-2 items-center gap-2 rounded-full bg-cream px-4 py-2 text-[14px] font-bold opacity-0 transition duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100"><span aria-hidden="true" class="size-2.5 flex-none rounded-full bg-sunny"></span>Menu development</span>
+</div>
+<div class="mt-5 flex items-center gap-3">
+<span aria-hidden="true" class="flex size-9 flex-none items-center justify-center rounded-xl border border-sage text-[14px] font-black">GN</span>
+<h3 class="text-[19px] font-bold leading-snug md:text-[20px]">Good Neighbour</h3>
+</div>
+<p class="mt-2 max-w-sm text-[15px] leading-[1.6]">Menu and back-of-house development, from kitchen planning to culinary training.</p>
+</article>
+</div>
+</div>
+</section>
+
+<!-- Vision and philosophy -->
+<section id="vision" class="relative overflow-hidden bg-cream-deep py-20 md:py-28">
+<span aria-hidden="true" class="pointer-events-none absolute left-[5%] bottom-[-60px] size-[80px] animate-rise rounded-full bg-butter opacity-0 [animation-delay:2s]"></span>
+<span aria-hidden="true" class="pointer-events-none absolute left-[36%] bottom-[-50px] size-[46px] animate-rise rounded-full bg-sunny opacity-0 max-md:hidden [animation-delay:6s] [animation-duration:12s]"></span>
+<span aria-hidden="true" class="pointer-events-none absolute left-[68%] bottom-[-70px] size-[90px] animate-rise rounded-full bg-sage opacity-0 max-md:hidden [animation-delay:9s] [animation-duration:17s]"></span>
+<div class="mx-auto w-full px-6 md:px-10 max-w-4xl relative z-10">
+<div class="flex flex-col gap-4"><h2 class="reveal text-[26px] font-bold uppercase leading-[1.15] tracking-[.06em] md:text-[32px]">Our vision</h2><div class="reveal-bar h-0.5 w-12 bg-sunny" aria-hidden="true"></div></div>
+<p class="reveal mt-8 max-w-4xl text-[22px] font-light leading-[1.4] md:text-[28px]">Our ambition is to develop, support and grow hospitality businesses that combine memorable experiences with strong operational and commercial foundations.</p>
+<div class="mt-8 flex max-w-4xl flex-col gap-5">
+<p class="reveal text-[17px] leading-[1.65]">We want to be recognised as a trusted partner for hospitality entrepreneurs, operators and investors who value both creative thinking and practical execution.</p>
+<p class="reveal text-[17px] leading-[1.65]">By combining our experience across brands, operations, food and beverage, marketing and corporate development, we aim to create businesses that customers enjoy and teams are proud to operate.</p>
+</div>
+<div class="mt-20 md:mt-24"><div class="flex flex-col gap-4"><h2 class="reveal text-[26px] font-bold uppercase leading-[1.15] tracking-[.06em] md:text-[32px]">The Feelgood philosophy</h2><div class="reveal-bar h-0.5 w-12 bg-sunny" aria-hidden="true"></div></div></div>
+<p class="reveal text-[17px] leading-[1.65] mt-8 max-w-4xl">We believe the best hospitality businesses bring together three things:</p>
+<div class="mt-6 flex max-w-4xl flex-col gap-1">
+<div class="reveal grid grid-cols-1 items-baseline gap-1 py-2 md:grid-cols-[240px_1fr] md:gap-8">
+<h3 class="text-[18px] font-bold leading-snug text-sunny">A compelling idea.</h3>
+<p class="text-[17px] leading-[1.65]">A concept that has a reason to exist and gives people a reason to visit.</p>
+</div>
+<div class="reveal grid grid-cols-1 items-baseline gap-1 py-2 md:grid-cols-[240px_1fr] md:gap-8">
+<h3 class="text-[18px] font-bold leading-snug text-sunny">Great execution.</h3>
+<p class="text-[17px] leading-[1.65]">The people, products, systems and service standards that make the experience work.</p>
+</div>
+<div class="reveal grid grid-cols-1 items-baseline gap-1 py-2 md:grid-cols-[240px_1fr] md:gap-8">
+<h3 class="text-[18px] font-bold leading-snug text-sunny">A sustainable business.</h3>
+<p class="text-[17px] leading-[1.65]">The commercial discipline required to operate, adapt and grow.</p>
+</div>
+</div>
+<div class="mt-8 flex max-w-4xl flex-col gap-5">
+<p class="reveal text-[17px] leading-[1.65]">When these elements work together, good concepts become great businesses.</p>
+<p class="reveal text-[17px] leading-[1.65]">That is what The Feelgood Company is here to help create.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-sunny text-charcoal">
+<div class="mx-auto w-full px-6 md:px-10 max-w-6xl flex flex-col gap-8 pb-[max(2.5rem,env(safe-area-inset-bottom))] pt-12">
+<div class="grid grid-cols-1 items-center gap-6 md:grid-cols-[1fr_auto_1fr]">
+<a href="index.html" aria-label="The Feelgood Co. home" class="justify-self-center md:justify-self-start"><img src="assets/img/logo.png" alt="The Feelgood Co." class="block h-16 w-auto md:h-[72px]"></a>
+<nav aria-label="Footer" class="flex items-center justify-center gap-6 md:gap-8">
+<a href="index.html" data-nav="home" data-active aria-current="page" class="touch-manipulation py-2 text-[13px] uppercase tracking-[.14em] text-charcoal transition-colors duration-200 hover:text-cream data-[active]:font-black data-[active]:text-cream md:text-[15px]">Home</a>
+<a href="about.html" data-nav="about" class="touch-manipulation py-2 text-[13px] uppercase tracking-[.14em] text-charcoal transition-colors duration-200 hover:text-cream data-[active]:font-black data-[active]:text-cream md:text-[15px]">About</a>
+<a href="index.html#services" data-nav="services" class="touch-manipulation py-2 text-[13px] uppercase tracking-[.14em] text-charcoal transition-colors duration-200 hover:text-cream data-[active]:font-black data-[active]:text-cream md:text-[15px]">Services</a>
+</nav>
+<a href="#" aria-label="Instagram" class="flex size-11 items-center justify-center justify-self-center text-charcoal transition-colors duration-200 hover:text-cream md:justify-self-end"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor" stroke="none"/></svg></a>
+</div>
+<div class="flex flex-col items-center gap-1.5 border-t border-charcoal/20 pt-6 text-center">
+<p class="text-[14px] tracking-[.04em]">Hospitality concepts, capabilities, experience and people.</p>
+<p class="text-[12px] tracking-[.04em]">© 2026 The Feelgood Co. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

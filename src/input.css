@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@source "../index.html";
+@source "../about.html";
+@source "../assets/js/main.js";
+
+@font-face { font-family: "Lato"; font-weight: 300; font-style: normal; font-display: swap; src: url("../fonts/lato-latin-300-normal.woff2") format("woff2"); }
+@font-face { font-family: "Lato"; font-weight: 400; font-style: normal; font-display: swap; src: url("../fonts/lato-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Lato"; font-weight: 700; font-style: normal; font-display: swap; src: url("../fonts/lato-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Lato"; font-weight: 900; font-style: normal; font-display: swap; src: url("../fonts/lato-latin-900-normal.woff2") format("woff2"); }
+
+@theme {
+  --color-sunny: #F4A62A;
+  --color-cream: #F6F0E8;
+  --color-charcoal: #57534E;
+  --color-sage: #A7B89A;
+  --color-terracotta: #D77A5B;
+  --color-butter: #E9CE7A;
+  --color-cream-deep: #EFE7DB;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --font-sans: "Lato", Arial, sans-serif;
+
+  --animate-rise: rise 14s ease-in-out infinite;
+  --animate-nudge: nudge 1.6s ease-in-out infinite alternate;
+    --animate-loader-in: loader-in .6s cubic-bezier(0.23, 1, 0.32, 1) both;
+  --animate-loader-dot: loader-dot 1s ease-in-out infinite;
+
+  @keyframes loader-in {
+    from { opacity: 0; transform: translateY(8px) scale(.98); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes loader-dot {
+    0%, 70%, 100% { transform: translateY(0); opacity: .35; }
+    35% { transform: translateY(-8px); opacity: 1; }
+  }
+
+  @keyframes rise {
+    0% { transform: translateY(80px); opacity: 0; }
+    25% { opacity: .45; }
+    100% { transform: translateY(-260px); opacity: 0; }
+  }
+  @keyframes nudge {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(8px); }
+  }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h, 72px) + 8px); -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; overscroll-behavior-y: none; }
+  body { @apply bg-cream text-charcoal font-sans tracking-[.01em] antialiased; }
+  :focus-visible { outline: 2px solid var(--color-charcoal); outline-offset: 3px; border-radius: 4px; }
+  ::selection { background: var(--color-butter); color: var(--color-charcoal); }
+  button { font-family: inherit; }
+  summary { list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+}
+
+/* Scroll reveal: short fade-up (ease-out), side slides and clip reveals for images */
+.js .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s var(--ease-out), transform .6s var(--ease-out); }
+.js .reveal.is-in { opacity: 1; transform: none; }
+.js .reveal-left { transform: translateX(-32px); }
+.js .reveal-right { transform: translateX(32px); }
+.js .reveal-bar { transform: scaleX(0); transform-origin: left; transition: transform .7s var(--ease-out) .15s; }
+.js .reveal-bar.is-in { transform: none; }
+.js .reveal-dot { opacity: 0; transform: translateY(-28px) scale(.5); transition: opacity .5s var(--ease-out), transform .9s var(--ease-out); }
+.js .reveal-dot.is-in { opacity: 1; transform: none; }
+.js .reveal-img { clip-path: inset(0 0 100% 0); transition: clip-path .9s var(--ease-in-out); }
+.js .reveal-img.is-in { clip-path: inset(0); }
+
+/* Lifecycle loop: travelling circle + node pulse */
+@keyframes orbit { to { transform: rotate(360deg); } }
+@keyframes nodeOn {
+  0% { transform: scale(1); }
+  3% { transform: scale(1.14); }
+  9% { transform: scale(1.14); }
+  16% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+.cycle .orbit { transform-origin: 550px 400px; animation: orbit 20s linear infinite; }
+.cycle .node { transform-box: fill-box; transform-origin: center; animation: nodeOn 20s linear infinite; }
+.cycle .node-1 { animation-delay: -.5s; }
+.cycle .node-2 { animation-delay: 3.5s; }
+.cycle .node-3 { animation-delay: 7.5s; }
+.cycle .node-4 { animation-delay: 11.5s; }
+.cycle .node-5 { animation-delay: 15.5s; }
+@media (hover: hover) and (pointer: fine) {
+  .cycle:hover .orbit, .cycle:hover .node { animation-play-state: paused; }
+}
+
+/* Timeline: line draws with scroll, dots pop, cards slide in */
+.tl-fill { transform-origin: top; }
+.js .tl-fill { transform: scaleY(0); }
+.js .tl-dot { opacity: 0; transform: scale(.6); transition: transform .45s cubic-bezier(.3, 1.4, .5, 1), opacity .3s var(--ease-out); }
+.js .tl-row.is-on .tl-dot { opacity: 1; transform: scale(1); }
+.js .tl-card { opacity: 0; transition: opacity .6s var(--ease-out), transform .6s var(--ease-out); }
+.js .tl-card-left { transform: translateX(-32px); }
+.js .tl-card-right { transform: translateX(32px); }
+.js .tl-row.is-on .tl-card { opacity: 1; transform: none; }
+
+@media (max-width: 767px) {
+  .js .tl-card-left, .js .tl-card-right { transform: translateX(24px); }
+}
+
+/* Reduced motion: keep gentle fades, drop movement */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-stage { height: auto; min-height: 0; }
+  .hero-panel { position: relative; inset: auto; opacity: 1 !important; transform: none !important; visibility: visible !important; min-height: 60svh; }
+  .js .reveal, .js .reveal-left, .js .reveal-right, .js .tl-card, .js .tl-dot { transform: none; transition: opacity .3s ease; }
+  .js .reveal-dot { transform: none; transition: opacity .3s ease; }
+  .js .reveal-bar, .js .reveal-img { transform: none; clip-path: none; transition: opacity .3s ease; }
+  .js .tl-fill { transform: scaleY(1); }
+  .cycle .orbit, .cycle .node, .animate-rise, .animate-nudge { animation: none; }
+}
